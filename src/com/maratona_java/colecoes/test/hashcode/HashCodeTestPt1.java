@@ -1,8 +1,8 @@
-package com.maratona_java.colecoes.equals.test;
+package com.maratona_java.colecoes.test.hashcode;
 
-import com.maratona_java.colecoes.equals.dominio.Smartphone;
+import com.maratona_java.colecoes.dominio.Smartphone;
 
-public class EqualsTestPt1 {
+public class HashCodeTestPt1 {
 	public static void main(String[] args) {
 		Smartphone s1=new Smartphone("1ABC1", "IPHONE");
 		Smartphone s2=new Smartphone("1ABC1", "IPHONE");

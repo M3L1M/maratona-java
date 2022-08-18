@@ -1,4 +1,4 @@
-package com.maratona_java.colecoes.equals.dominio;
+package com.maratona_java.colecoes.dominio;
 
 import java.util.Objects;
 
@@ -26,6 +26,17 @@ public class Smartphone {
 		return serialNumber != null && serialNumber.equals(smartphone.serialNumber);
 	}
 	
+	
+	//Se x.equals(y) == true, y.hashCode() == x.hashCode()
+	//y.hashCode() == x.hashCode() não necessarriamente o equals de y.equals(x) tem que ser true
+	//x.equals(y) == false
+	//y.hashCode() != x.hashCode() x.equals(y) devera ser false
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return serialNumber == null ?0: this.serialNumber.hashCode();
+	}
 
 
 
